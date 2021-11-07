@@ -5,8 +5,8 @@ info:
 servers:
   - url: http://gypark.gifty4u.com
 paths:
-  /login:
-    $ref: '../v1.0.0/resources/auth.yaml#/Login'
+  /v1.0.0/login:
+    $ref: '../v1.0.0/.yaml#/paths/~1login'
   /v1.0.1/prices:
     $ref: '../v1.0.1/.yaml#/paths/~1prices'
 
