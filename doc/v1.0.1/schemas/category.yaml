@@ -1,0 +1,5 @@
+properties:
+  index:
+    type: integer
+  value:
+    type: integer

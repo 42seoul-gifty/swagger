@@ -1,0 +1,7 @@
+properties:
+  id:
+    type: integer
+  nickname:
+    type: string
+  email:
+    type: string

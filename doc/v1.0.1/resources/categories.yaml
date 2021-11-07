@@ -1,0 +1,23 @@
+Prices:
+  get:
+    tags:
+      - Categories
+    summary: 가격대 리스트
+    security:
+      - Bearer: []
+    responses:
+      '200':
+        description: 정상 조회
+        content:
+          application/json:
+            schema:
+              properties:
+                success:
+                  type: boolean
+                data:
+                  type: array
+                  items:
+                    $ref: '../schemas/category.yaml'
+      '401':
+        $ref: '../../v1.0.0/responses/401.yaml'
+

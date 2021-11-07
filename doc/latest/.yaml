@@ -1,0 +1,16 @@
+openapi: 3.0.0
+info:
+  title: API documentation
+  version: latest
+servers:
+  - url: http://gypark.gifty4u.com
+paths:
+  /login:
+    $ref: '../v1.0.0/resources/auth.yaml#/Login'
+  /v1.0.1/prices:
+    $ref: '../v1.0.1/.yaml#/paths/~1prices'
+
+components:
+  securitySchemes:
+    BearerAuth:
+      $ref: '../v1.0.0/schemas/security.yaml'

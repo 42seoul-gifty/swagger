@@ -1,0 +1,10 @@
+description: 인증되지 않음
+content:
+  application/json:
+    schema:
+      properties:
+        success:
+          type: boolean
+          default: false
+        message:
+          type: string

@@ -1,0 +1,31 @@
+Login:
+  post:
+    tags:
+      - Auth
+    summary: 테스트 로그인
+    requestBody:
+      content:
+        application/json:
+          schema:
+            properties:
+              email:
+                type: string
+              password:
+                type: string
+    responses:
+      '200':
+        description: 정상 로그인
+        content:
+          application/json:
+            schema:
+              properties:
+                success:
+                  type: boolean
+                data:
+                  properties:
+                    access_token:
+                      type: string
+                    refresh_token:
+                      type: string
+                    user:
+                      $ref: '../schemas/user.yaml'
